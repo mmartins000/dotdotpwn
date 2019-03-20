@@ -266,9 +266,8 @@ for my $fh (STDOUT, REPORT) { print $fh "[+] Traversal Engine DONE ! - Total tra
 
 # Testing
 print  "\n[=========== TESTING RESULTS ============]\n";
-printf "[+] Ready to launch %.2f traversals per second\n", (1000000 / $time);
-print  "[+] Press Enter to start the testing (You can stop it pressing Ctrl + C)\n";
-<STDIN>;
+printf "[+] Launching %.2f traversals per second\n", (1000000 / $time);
+print  "[+] You can stop it by pressing Ctrl+C\n";
 
 $start_time = time;
 
